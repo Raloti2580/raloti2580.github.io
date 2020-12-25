@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!--  Con amor y dedicación de Rodri para Isra y Aitana :) -->
+<html>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<audio id="audio" src="resources/rompicion.mp3" autoplay="false" ></audio>
+<title><3</title>
+<head>
+  <div style="background-image: url('cinema_background.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -ms-content-zooming: none;
+  position:absolute;
+  overflow: scroll;">
+  <center><img id="header_top" src="header.png" alt="Header para el comienzo de la página" width="40%"></center>
+  <h1 id="texto_debajo_header">Bonos válidos hasta el 21/12/2021 &#128197;</h1>
+  <br>
+  <br>
+  <!--  COMIENZO DEL PRIMER TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="primer_ticket" src="resources/Ticket1.png" width="50%">
+        <br>
+        <button id="primer_boton" class="ticket1" onclick="primero()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="segundo_ticket" src="resources/Ticket2.png" width="50%">
+        <br>
+        <button id="segundo_boton" class="ticket1" onclick="segundo()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="tercer_ticket" src="resources/Ticket3.png" width="50%">
+        <br>
+        <button id="tercer_boton" class="ticket1" onclick="tercero()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- COMIENZO DEL SEGUNDO TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="cuarto_ticket" src="resources/Ticket4.png" width="50%">
+        <br>
+        <button id="cuarto_boton" class="ticket1" onclick="cuarto()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="quinto_ticket" src="resources/Ticket5.png" width="50%">
+        <br>
+        <button id="quinto_boton" class="ticket1" onclick="quinto()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="sexto_ticket" src="resources/Ticket6.png" width="50%">
+        <br>
+        <button id="sexto_boton" class="ticket1" onclick="sexto()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- COMIENZO DEL TERCER TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="septimo_ticket" src="resources/Ticket7.png" width="50%">
+        <br>
+        <button id="septimo_boton"class="ticket1" onclick="septimo()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="octavo_ticket" src="resources/Ticket8.png" width="50%">
+        <br>
+        <button id="octavo_boton" class="ticket1" onclick="octavo()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="noveno_ticket" src="resources/Ticket9.png" width="50%">
+        <br>
+        <button id="noveno_boton" class="ticket1" onclick="noveno()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- COMIENZO DEL CUARTO TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="decimo_ticket" src="resources/Ticket10.png" width="50%">
+        <br>
+        <button id="decimo_boton" class="ticket1" onclick="decimo()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="decimoprimer_ticket" src="resources/Ticket11.png" width="50%">
+        <br>
+        <button id="decimoprimer_boton" class="ticket1" onclick="decimoprimero()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="decimosegundo_ticket" src="resources/Ticket12.png" width="50%">
+        <br>
+        <button id="decimosegundo_boton" class="ticket1" onclick="decimosegundo()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- COMIENZO DEL QUINTO TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="decimotercer_ticket" src="resources/Ticket13.png" width="50%">
+        <br>
+        <button id="decimotercer_boton" class="ticket1" onclick="decimotercero()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="decimocuarto_ticket" src="resources/Ticket14.png" width="50%">
+        <br>
+        <button id="decimocuarto_boton" class="ticket1" onclick="decimocuarto()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="decimoquinto_ticket" src="resources/Ticket15.png" width="50%">
+        <br>
+        <button id="decimoquinto_boton" class="ticket1" onclick="decimoquinto()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- COMIENZO DEL SEXTO TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="decimosexto_ticket" src="resources/Ticket16.png" width="50%">
+        <br>
+        <button id="decimosexto_boton" class="ticket1" onclick="decimosexto()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="decimoseptimo_ticket" src="resources/Ticket17.png" width="50%">
+        <br>
+        <button id="decimoseptimo_boton" class="ticket1" onclick="decimoseptimo()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="decimoctavo_ticket" src="resources/Ticket18.png" width="50%">
+        <br>
+        <button id="decimoctavo_boton" class="ticket1" onclick="decimoctavo()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <h1 id="texto_supertickets">Los "SUPERTICKETS" &#129464;</h1>
+  <br>
+  <br>
+  <!-- COMIENZO DEL SÉPTIMO TR -->
+  <table width="100%">
+    <tr>
+      <th width="33%">
+        <img id="decimonoveno_ticket" src="resources/Ticket19.png" width="50%">
+        <br>
+        <button id="decimonoveno_boton" class="ticket1" onclick="decimonoveno()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="vigesimo_ticket" src="resources/Ticket20.png" width="50%">
+        <br>
+        <button id="vigesimo_boton" class="ticket1" onclick="vigesimo()">Canjear</button>
+      </th>
+      <th width="33%">
+        <img id="vigesimoprimer_ticket" src="resources/Ticket21.png" width="50%">
+        <br>
+        <button id="vigesimoprimer_boton" class="ticket1" onclick="vigesimoprimero()">Canjear</button>
+      </th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+</div>
+</head>
+<script>
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  }
+  else {
+    begin += 2;
+    var end = document.cookie.indexOf(";", begin);
+    if (end == -1) {
+      end = dc.length;
+    }
+  }
+  return decodeURI(dc.substring(begin + prefix.length, end));
+}
+
+var myCookie = getCookie("primero");
+var myCookie2 = getCookie("segundo");
+var myCookie3 = getCookie("tercero");
+var myCookie4 = getCookie("cuarto");
+var myCookie5 = getCookie("quinto");
+var myCookie6 = getCookie("sexto");
+var myCookie7 = getCookie("septimo");
+var myCookie8 = getCookie("octavo");
+var myCookie9 = getCookie("noveno");
+var myCookie10 = getCookie("decimo");
+var myCookie11 = getCookie("decimoprimero");
+var myCookie12 = getCookie("decimosegundo");
+var myCookie13 = getCookie("decimotercero");
+var myCookie14 = getCookie("decimocuarto");
+var myCookie15 = getCookie("decimoquinto");
+var myCookie16 = getCookie("decimosexto");
+var myCookie17 = getCookie("decimoseptimo");
+var myCookie18 = getCookie("decimoctavo");
+var myCookie19 = getCookie("decimonoveno");
+var myCookie20 = getCookie("vigesimo");
+var myCookie21 = getCookie("vigesimoprimero");
+
+if (myCookie == null) {
+}
+else {
+  document.getElementById("primer_boton").style.background = '#FF0000';
+  document.getElementById("primer_boton").disabled = true;
+  document.getElementById('primer_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('primer_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie2 == null) {
+}
+else {
+  document.getElementById("segundo_boton").style.background = '#FF0000';
+  document.getElementById("segundo_boton").disabled = true;
+  document.getElementById('segundo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('segundo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie3 == null) {
+}
+else {
+  document.getElementById("tercer_boton").style.background = '#FF0000';
+  document.getElementById("tercer_boton").disabled = true;
+  document.getElementById('tercer_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('tercer_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie4 == null) {
+}
+else {
+  document.getElementById("cuarto_boton").style.background = '#FF0000';
+  document.getElementById("cuarto_boton").disabled = true;
+  document.getElementById('cuarto_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('cuarto_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie5 == null) {
+}
+else {
+  document.getElementById("quinto_boton").style.background = '#FF0000';
+  document.getElementById("quinto_boton").disabled = true;
+  document.getElementById('quinto_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('quinto_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie6 == null) {
+}
+else {
+  document.getElementById("sexto_boton").style.background = '#FF0000';
+  document.getElementById("sexto_boton").disabled = true;
+  document.getElementById('sexto_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('sexto_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie7 == null) {
+}
+else {
+  document.getElementById("septimo_boton").style.background = '#FF0000';
+  document.getElementById("septimo_boton").disabled = true;
+  document.getElementById('septimo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('septimo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie8 == null) {
+}
+else {
+  document.getElementById("octavo_boton").style.background = '#FF0000';
+  document.getElementById("octavo_boton").disabled = true;
+  document.getElementById('octavo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('octavo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie9 == null) {
+}
+else {
+  document.getElementById("noveno_boton").style.background = '#FF0000';
+  document.getElementById("noveno_boton").disabled = true;
+  document.getElementById('noveno_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('noveno_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie10 == null) {
+}
+else {
+  document.getElementById("decimo_boton").style.background = '#FF0000';
+  document.getElementById("decimo_boton").disabled = true;
+  document.getElementById('decimo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie11 == null) {
+}
+else {
+  document.getElementById("decimoprimer_boton").style.background = '#FF0000';
+  document.getElementById("decimoprimer_boton").disabled = true;
+  document.getElementById('decimoprimer_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimoprimer_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie12 == null) {
+}
+else {
+  document.getElementById("decimosegundo_boton").style.background = '#FF0000';
+  document.getElementById("decimosegundo_boton").disabled = true;
+  document.getElementById('decimosegundo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimosegundo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie13 == null) {
+}
+else {
+  document.getElementById("decimotercer_boton").style.background = '#FF0000';
+  document.getElementById("decimotercer_boton").disabled = true;
+  document.getElementById('decimotercer_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimotercer_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie14 == null) {
+}
+else {
+  document.getElementById("decimocuarto_boton").style.background = '#FF0000';
+  document.getElementById("decimocuarto_boton").disabled = true;
+  document.getElementById('decimocuarto_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimocuarto_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie15 == null) {
+}
+else {
+  document.getElementById("decimoquinto_boton").style.background = '#FF0000';
+  document.getElementById("decimoquinto_boton").disabled = true;
+  document.getElementById('decimoquinto_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimoquinto_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie16 == null) {
+}
+else {
+  document.getElementById("decimosexto_boton").style.background = '#FF0000';
+  document.getElementById("decimosexto_boton").disabled = true;
+  document.getElementById('decimosexto_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimosexto_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie17 == null) {
+}
+else {
+  document.getElementById("decimoseptimo_boton").style.background = '#FF0000';
+  document.getElementById("decimoseptimo_boton").disabled = true;
+  document.getElementById('decimoseptimo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimoseptimo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie18 == null) {
+}
+else {
+  document.getElementById("decimoctavo_boton").style.background = '#FF0000';
+  document.getElementById("decimoctavo_boton").disabled = true;
+  document.getElementById('decimoctavo_ticket').src = 'resources/broken_ticket.png';
+  document.getElementById('decimoctavo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie19 == null) {
+}
+else {
+  document.getElementById("decimonoveno_boton").style.background = '#FF0000';
+  document.getElementById("decimonoveno_boton").disabled = true;
+  document.getElementById('decimonoveno_ticket').src = 'resources/superticket_roto.png';
+  document.getElementById('decimonoveno_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie20 == null) {
+}
+else {
+  document.getElementById("vigesimo_boton").style.background = '#FF0000';
+  document.getElementById("vigesimo_boton").disabled = true;
+  document.getElementById('vigesimo_ticket').src = 'resources/superticket_roto.png';
+  document.getElementById('vigesimo_boton').innerHTML = "CANJEADO";
+}
+
+if (myCookie21 == null) {
+}
+else {
+  document.getElementById("vigesimoprimer_boton").style.background = '#FF0000';
+  document.getElementById("vigesimoprimer_boton").disabled = true;
+  document.getElementById('vigesimoprimer_ticket').src = 'resources/superticket_roto.png';
+  document.getElementById('vigesimoprimer_boton').innerHTML = "CANJEADO";
+}
+
+function primero() {
+  if (myCookie == null) {
+    document.cookie = "primero = 'yes'";
+    alert("Has canjeado correctamente el primer tícket");
+    document.getElementById("primer_boton").style.background='#FF0000';
+    document.getElementById("primer_boton").disabled = true;
+    document.getElementById('primer_ticket').src='broken_ticket.png';
+    document.getElementById('primer_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("primer_boton").style.background='#FF0000';
+    document.getElementById("primer_boton").disabled = true;
+    document.getElementById('primer_ticket').src='broken_ticket.png';
+    document.getElementById('primer_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function segundo() {
+  if (myCookie2 == null) {
+    document.cookie = "segundo = 'yes'";
+    alert("Has canjeado correctamente el segundo tícket");
+    document.getElementById("segundo_boton").style.background='#FF0000';
+    document.getElementById("segundo_boton").disabled = true;
+    document.getElementById('segundo_ticket').src='broken_ticket.png';
+    document.getElementById('segundo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("segundo_boton").style.background='#FF0000';
+    document.getElementById("segundo_boton").disabled = true;
+    document.getElementById('segundo_ticket').src='broken_ticket.png';
+    document.getElementById('segundo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function tercero() {
+  if (myCookie3 == null) {
+    document.cookie = "tercero = 'yes'";
+    alert("Has canjeado correctamente el tercer tícket");
+    document.getElementById("tercer_boton").style.background='#FF0000';
+    document.getElementById("tercer_boton").disabled = true;
+    document.getElementById('tercer_ticket').src='broken_ticket.png';
+    document.getElementById('tercer_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("tercer_boton").style.background='#FF0000';
+    document.getElementById("tercer_boton").disabled = true;
+    document.getElementById('tercer_ticket').src='broken_ticket.png';
+    document.getElementById('tercer_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function cuarto() {
+  if (myCookie4 == null) {
+    document.cookie = "cuarto = 'yes'";
+    alert("Has canjeado correctamente el cuarto tícket");
+    document.getElementById("cuarto_boton").style.background='#FF0000';
+    document.getElementById("cuarto_boton").disabled = true;
+    document.getElementById('cuarto_ticket').src='broken_ticket.png';
+    document.getElementById('cuarto_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("cuarto_boton").style.background='#FF0000';
+    document.getElementById("cuarto_boton").disabled = true;
+    document.getElementById('cuarto_ticket').src='broken_ticket.png';
+    document.getElementById('cuarto_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function quinto() {
+  if (myCookie5 == null) {
+    document.cookie = "quinto = 'yes'";
+    alert("Has canjeado correctamente el quinto tícket");
+    document.getElementById("cuarto_boton").style.background='#FF0000';
+    document.getElementById("cuarto_boton").disabled = true;
+    document.getElementById('cuarto_ticket').src='broken_ticket.png';
+    document.getElementById('cuarto_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("cuarto_boton").style.background='#FF0000';
+    document.getElementById("cuarto_boton").disabled = true;
+    document.getElementById('cuarto_ticket').src='broken_ticket.png';
+    document.getElementById('cuarto_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function sexto() {
+  if (myCookie6 == null) {
+    document.cookie = "sexto = 'yes'";
+    alert("Has canjeado correctamente el sexto tícket");
+    document.getElementById("sexto_boton").style.background='#FF0000';
+    document.getElementById("sexto_boton").disabled = true;
+    document.getElementById('sexto_ticket').src='broken_ticket.png';
+    document.getElementById('sexto_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("sexto_boton").style.background='#FF0000';
+    document.getElementById("sexto_boton").disabled = true;
+    document.getElementById('sexto_ticket').src='broken_ticket.png';
+    document.getElementById('sexto_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function septimo() {
+  if (myCookie7 == null) {
+    document.cookie = "septimo = 'yes'";
+    alert("Has canjeado correctamente el séptimo tícket");
+    document.getElementById("septimo_boton").style.background='#FF0000';
+    document.getElementById("septimo_boton").disabled = true;
+    document.getElementById('septimo_ticket').src='broken_ticket.png';
+    document.getElementById('septimo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("septimo_boton").style.background='#FF0000';
+    document.getElementById("septimo_boton").disabled = true;
+    document.getElementById('septimo_ticket').src='broken_ticket.png';
+    document.getElementById('septimo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function octavo() {
+  if (myCookie8 == null) {
+    document.cookie = "octavo = 'yes'";
+    alert("Has canjeado correctamente el octavo tícket");
+    document.getElementById("octavo_boton").style.background='#FF0000';
+    document.getElementById("octavo_boton").disabled = true;
+    document.getElementById('octavo_ticket').src='broken_ticket.png';
+    document.getElementById('octavo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("octavo_boton").style.background='#FF0000';
+    document.getElementById("octavo_boton").disabled = true;
+    document.getElementById('octavo_ticket').src='broken_ticket.png';
+    document.getElementById('octavo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function noveno() {
+  if (myCookie9 == null) {
+    document.cookie = "noveno = 'yes'";
+    alert("Has canjeado correctamente el noveno tícket");
+    document.getElementById("noveno_boton").style.background='#FF0000';
+    document.getElementById("noveno_boton").disabled = true;
+    document.getElementById('noveno_ticket').src='broken_ticket.png';
+    document.getElementById('noveno_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("noveno_boton").style.background='#FF0000';
+    document.getElementById("noveno_boton").disabled = true;
+    document.getElementById('noveno_ticket').src='broken_ticket.png';
+    document.getElementById('noveno_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimo() {
+  if (myCookie10 == null) {
+    document.cookie = "decimo = 'yes'";
+    alert("Has canjeado correctamente el decimo tícket");
+    document.getElementById("decimo_boton").style.background='#FF0000';
+    document.getElementById("decimo_boton").disabled = true;
+    document.getElementById('decimo_ticket').src='broken_ticket.png';
+    document.getElementById('decimo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimo_boton").style.background='#FF0000';
+    document.getElementById("decimo_boton").disabled = true;
+    document.getElementById('decimo_ticket').src='broken_ticket.png';
+    document.getElementById('decimo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimoprimero() {
+  if (myCookie11 == null) {
+    document.cookie = "decimoprimero = 'yes'";
+    alert("Has canjeado correctamente el decimoprimer tícket");
+    document.getElementById("decimoprimer_boton").style.background='#FF0000';
+    document.getElementById("decimoprimer_boton").disabled = true;
+    document.getElementById('decimoprimer_ticket').src='broken_ticket.png';
+    document.getElementById('decimoprimer_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimoprimer_boton").style.background='#FF0000';
+    document.getElementById("decimoprimer_boton").disabled = true;
+    document.getElementById('decimoprimer_ticket').src='broken_ticket.png';
+    document.getElementById('decimoprimer_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimosegundo() {
+  if (myCookie12 == null) {
+    document.cookie = "decimosegundo = 'yes'";
+    alert("Has canjeado correctamente el decimosegundo tícket");
+    document.getElementById("decimosegundo_boton").style.background='#FF0000';
+    document.getElementById("decimosegundo_boton").disabled = true;
+    document.getElementById('decimosegundo_ticket').src='broken_ticket.png';
+    document.getElementById('decimosegundo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimosegundo_boton").style.background='#FF0000';
+    document.getElementById("decimosegundo_boton").disabled = true;
+    document.getElementById('decimosegundo_ticket').src='broken_ticket.png';
+    document.getElementById('decimosegundo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimotercero() {
+  if (myCookie13 == null) {
+    document.cookie = "decimotercero = 'yes'";
+    alert("Has canjeado correctamente el decimotercer tícket");
+    document.getElementById("decimotercer_boton").style.background='#FF0000';
+    document.getElementById("decimotercer_boton").disabled = true;
+    document.getElementById('decimotercer_ticket').src='broken_ticket.png';
+    document.getElementById('decimotercer_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimotercer_boton").style.background='#FF0000';
+    document.getElementById("decimotercer_boton").disabled = true;
+    document.getElementById('decimotercer_ticket').src='broken_ticket.png';
+    document.getElementById('decimotercer_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimocuarto() {
+  if (myCookie14 == null) {
+    document.cookie = "decimocuarto = 'yes'";
+    alert("Has canjeado correctamente el decimocuarto tícket");
+    document.getElementById("decimocuarto_boton").style.background='#FF0000';
+    document.getElementById("decimocuarto_boton").disabled = true;
+    document.getElementById('decimocuarto_ticket').src='broken_ticket.png';
+    document.getElementById('decimocuarto_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimocuarto_boton").style.background='#FF0000';
+    document.getElementById("decimocuarto_boton").disabled = true;
+    document.getElementById('decimocuarto_ticket').src='broken_ticket.png';
+    document.getElementById('decimocuarto_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimoquinto() {
+  if (myCookie15 == null) {
+    document.cookie = "decimoquinto = 'yes'";
+    alert("Has canjeado correctamente el decimoquinto tícket");
+    document.getElementById("decimoquinto_boton").style.background='#FF0000';
+    document.getElementById("decimoquinto_boton").disabled = true;
+    document.getElementById('decimoquinto_ticket').src='broken_ticket.png';
+    document.getElementById('decimoquinto_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimoquinto_boton").style.background='#FF0000';
+    document.getElementById("decimoquinto_boton").disabled = true;
+    document.getElementById('decimoquinto_ticket').src='broken_ticket.png';
+    document.getElementById('decimoquinto_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimosexto() {
+  if (myCookie16 == null) {
+    document.cookie = "decimosexto = 'yes'";
+    alert("Has canjeado correctamente el decimosexto tícket");
+    document.getElementById("decimosexto_boton").style.background='#FF0000';
+    document.getElementById("decimosexto_boton").disabled = true;
+    document.getElementById('decimosexto_ticket').src='broken_ticket.png';
+    document.getElementById('decimosexto_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimosexto_boton").style.background='#FF0000';
+    document.getElementById("decimosexto_boton").disabled = true;
+    document.getElementById('decimosexto_ticket').src='broken_ticket.png';
+    document.getElementById('decimosexto_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimoseptimo() {
+  if (myCookie17 == null) {
+    document.cookie = "decimoseptimo = 'yes'";
+    alert("Has canjeado correctamente el decimoseptimo tícket");
+    document.getElementById("decimoseptimo_boton").style.background='#FF0000';
+    document.getElementById("decimoseptimo_boton").disabled = true;
+    document.getElementById('decimoseptimo_ticket').src='broken_ticket.png';
+    document.getElementById('decimoseptimo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimoseptimo_boton").style.background='#FF0000';
+    document.getElementById("decimoseptimo_boton").disabled = true;
+    document.getElementById('decimoseptimo_ticket').src='broken_ticket.png';
+    document.getElementById('decimoseptimo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimoctavo() {
+  if (myCookie18 == null) {
+    document.cookie = "decimoctavo = 'yes'";
+    alert("Has canjeado correctamente el decimoctavo tícket");
+    document.getElementById("decimoctavo_boton").style.background='#FF0000';
+    document.getElementById("decimoctavo_boton").disabled = true;
+    document.getElementById('decimoctavo_ticket').src='broken_ticket.png';
+    document.getElementById('decimoctavo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimoctavo_boton").style.background='#FF0000';
+    document.getElementById("decimoctavo_boton").disabled = true;
+    document.getElementById('decimoctavo_ticket').src='broken_ticket.png';
+    document.getElementById('decimoctavo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function decimonoveno() {
+  if (myCookie19 == null) {
+    document.cookie = "decimonoveno = 'yes'";
+    alert("Has canjeado correctamente el decimonoveno tícket");
+    document.getElementById("decimonoveno_boton").style.background='#FF0000';
+    document.getElementById("decimonoveno_boton").disabled = true;
+    document.getElementById('decimonoveno_ticket').src='resources/superticket_roto.png';
+    document.getElementById('decimonoveno_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("decimonoveno_boton").style.background='#FF0000';
+    document.getElementById("decimonoveno_boton").disabled = true;
+    document.getElementById('decimonoveno_ticket').src='resources/superticket_roto.png';
+    document.getElementById('decimonoveno_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function vigesimo() {
+  if (myCookie20 == null) {
+    document.cookie = "vigesimo = 'yes'";
+    alert("Has canjeado correctamente el vigesimo tícket");
+    document.getElementById("vigesimo_boton").style.background='#FF0000';
+    document.getElementById("vigesimo_boton").disabled = true;
+    document.getElementById('vigesimo_ticket').src='resources/superticket_roto.png';
+    document.getElementById('vigesimo_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("vigesimo_boton").style.background='#FF0000';
+    document.getElementById("vigesimo_boton").disabled = true;
+    document.getElementById('vigesimo_ticket').src='resources/superticket_roto.png';
+    document.getElementById('vigesimo_boton').innerHTML = "CANJEADO";
+  }
+}
+
+function vigesimoprimero() {
+  if (myCookie21 == null) {
+    document.cookie = "vigesimoprimero = 'yes'";
+    alert("Has canjeado correctamente el vigesimoprimero tícket");
+    document.getElementById("vigesimoprimer_boton").style.background='#FF0000';
+    document.getElementById("vigesimoprimer_boton").disabled = true;
+    document.getElementById('vigesimoprimer_ticket').src='resources/superticket_roto.png';
+    document.getElementById('vigesimoprimer_boton').innerHTML = "CANJEADO";
+    var sound = document.getElementById("audio");
+    sound.play();
+  }
+  else {
+    document.getElementById("vigesimoprimer_boton").style.background='#FF0000';
+    document.getElementById("vigesimoprimer_boton").disabled = true;
+    document.getElementById('vigesimoprimer_ticket').src='resources/superticket_roto.png';
+    document.getElementById('vigesimoprimer_boton').innerHTML = "CANJEADO";
+  }
+}
+
+</script>
+</html>

@@ -1,0 +1,43 @@
+#texto_debajo_header {
+  text-align: center;
+  font-family: applefont;
+  font-style: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+.ticket1 {
+  border: none;
+  background-color: #17a317;
+  color: white;
+  font-style: bold;
+  padding: 10px 110px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: black;
+}
+
+body {
+  margin: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#texto_supertickets {
+  text-align: center;
+  font-family: applefont;
+  font-style: bold;
+  color: white;
+  padding-left: 30px;
+}
+
+@font-face {
+  font-family: applefont;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
